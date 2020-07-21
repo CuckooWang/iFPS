@@ -17,6 +17,6 @@ Calculate the number of upstream kinase families of each protein based on iGPS 1
 
 ## Contact
 Dr. Yu Xue: xueyu@hust.edu.cn  
-Dr. Mengqiu Dong: dongmengqiu@nibs.ac.cn 
-Wenjun Li: liwenjun@nibs.ac.cn 
+Dr. Mengqiu Dong: dongmengqiu@nibs.ac.cn  
+Wenjun Li: liwenjun@nibs.ac.cn  
 Chenwei Wang: wangchenwei@hust.edu.cn  
