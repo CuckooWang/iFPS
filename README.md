@@ -15,7 +15,7 @@ Get the sencond structural information of proteins from NetSurfP v1.1 (http://ww
 ### UpKA.java
 Calculate the number of upstream kinase families of each protein based on iGPS 1.0 (http://igps.biocuckoo.org/).
 ### demo
-A small dataset to demo above codes, an example of the output of training is also provied.
+A small dataset to demo above codes, an example of the output of training is also provided.
 
 ## Contact
 Dr. Yu Xue: xueyu@hust.edu.cn  
