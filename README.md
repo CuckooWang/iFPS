@@ -17,6 +17,9 @@ Calculate the number of upstream kinase families of each protein based on iGPS 1
 ### demo
 A small dataset to demo above codes, an example of the output of training is also provided.
 
+### Additional information
+All codes can run directly on a computer with JAVA installed, expected run time is usually less than 1 minute.
+
 ## Contact
 Dr. Yu Xue: xueyu@hust.edu.cn  
 Dr. Mengqiu Dong: dongmengqiu@nibs.ac.cn  
