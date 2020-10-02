@@ -27,7 +27,7 @@ GPS-PAIL 2.0 and iGPS 1.0 for windows platform were downloaded and adopted befor
 All codes and softwares could run on a "normal" desktop computer, no non-standard hardware is needed
 
 ## Installation guide
-All codes can run directly on a "normal" computer with JAVA installed, no extra installation is required
+All codes can run directly on a "normal" computer with JAVA 1.8.0 installed, no extra installation is required
 
 ## Additional information
 Expected run time is depended on the number of phosphosites used for prediction, it will take about 5 minutes for 2,000 sites.
