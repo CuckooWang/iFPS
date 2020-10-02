@@ -14,6 +14,8 @@ Calculate the number of protein domains and motifs that interate with each prote
 Get the sencond structural information of proteins from NetSurfP v1.1 (http://www.cbs.dtu.dk/services/NetSurfP/).
 ### UpKA.java
 Calculate the number of upstream kinase families of each protein based on iGPS 1.0 (http://igps.biocuckoo.org/).
+### demo
+A small dataset to demo above codes, an output example of the training is also provied.
 
 ## Contact
 Dr. Yu Xue: xueyu@hust.edu.cn  
