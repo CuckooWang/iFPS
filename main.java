@@ -1,3 +1,5 @@
+package github;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -329,7 +331,7 @@ public class main {
 			bw0.close();
 			
 			BufferedWriter bw1 = new BufferedWriter(new FileWriter
-					("roc.txt"));
+					("results.txt"));
 			writerROC(bw1,poss,negsforpre,sscore);
 		}
 	}
@@ -343,44 +345,17 @@ public class main {
 			allsites.add(negs.get(i));
 		}
 		
-		Collections.sort(allsites, new Comparator(){
-			@Override
-			public int compare(Object o1, Object o2) {
-				String a = (String)o1;
-				String b = (String)o2;
-				if(sscore.get(a) < sscore.get(b)){
-					return 1;
-				}else if(sscore.get(a) > sscore.get(b)){
-					return -1;
-				}else{
-					return 0;
-				}
-			}
-			
-		});
 		
-		int TP = 0;
-		int TN = negs.size();
-		int FP = 0;
-		int FN = poss.size();
-		double sp = LOO.getsp(TP, TN, FP, FN);
-		double sn = LOO.getsn(TP, TN, FP, FN);
-		bw1.write((1-sp) + "\t" + sn);
-		bw1.newLine();
 		for(int i=0;i<allsites.size();i++){								
 			if(poss.contains(allsites.get(i))){
-				TP ++;
-				FN --;
+				bw1.write(sscore.get(allsites.get(i)) + "\t" + 1 + "\t" + allsites.get(i));
+				bw1.newLine();
 			}else if(negs.contains(allsites.get(i))){
-				FP ++;
-				TN --;
+				bw1.write(sscore.get(allsites.get(i)) + "\t" + 0 + "\t" + allsites.get(i));
+				bw1.newLine();
 			}else{
-				System.out.println(allsites.get(i));
+				System.out.println("abnormal：" + allsites.get(i));
 			}
-			sp = LOO.getsp(TP, TN, FP, FN);
-			sn = LOO.getsn(TP, TN, FP, FN);
-			bw1.write((1-sp) + "\t" + sn);
-			bw1.newLine();
 		}
 		bw1.flush();
 		bw1.close();
