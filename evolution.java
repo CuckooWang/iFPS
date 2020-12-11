@@ -12,12 +12,12 @@ import tools.LifeTree;
 public class evolution {
 	public static Map<String,Double> getRCS(File sites,String msout) throws IOException{
 		Set<String> nomsout = new HashSet<String>();
-		File f1 = new File("D:\\elegans\\2017年10月\\dbPAF\\eml\\EML_HUMAN.fa");
-		File f2 = new File("D:\\elegans\\2017年10月\\dbPAF\\eml\\EML_MOUSE.fa");
-		File f3 = new File("D:\\elegans\\2017年10月\\dbPAF\\eml\\EML_RAT.fa");
-		File f4 = new File("D:\\elegans\\2017年10月\\dbPAF\\eml\\EML_DROME.fa");
-		File f5 = new File("D:\\elegans\\2017年10月\\dbPAF\\eml\\EML_SCHPO.fa");
-		File f6 = new File("D:\\elegans\\2017年10月\\dbPAF\\eml\\EML_YEAST.fa");
+		File f1 = new File("ELM_HUMAN.fa");
+		File f2 = new File("ELM_MOUSE.fa");
+		File f3 = new File("ELM_RAT.fa");
+		File f4 = new File("ELM_DROME.fa");
+		File f5 = new File("ELM_SCHPO.fa");
+		File f6 = new File("ELM_YEAST.fa");
 		
 		Map<String,Set<Integer>> hmall = new HashMap<String,Set<Integer>>();
 		readEML(f1,hmall,"human");
@@ -41,7 +41,7 @@ public class evolution {
 			String aa = sp1[3];
 			String temaa = oldseq.substring(pos-1, pos);
 			if(!temaa.equals(aa)){
-				System.out.println(id + "\t" + pos + ":位置标记错了");
+				System.out.println(id + "\t" + pos + ":WRONG POSITION");
 			}
 			BufferedReader br2 = new BufferedReader(new FileReader(msout + id + ".afa"));
 			Map<String,String> seqs = getSeq(br2);
