@@ -30,12 +30,12 @@ All codes and softwares could run on a "normal" desktop computer, no non-standar
 All codes can run directly on a "normal" computer with JAVA 1.8.0 installed, no extra installation is required
 
 ## Instruction
-For users who want to run iFPS in own computer, files contian the information of different features should be first generated as the form demonstrated in demo/. 
-"ELM_HUMAN.fa" contains human p-sites in ELM format collected in dbPAF (http://dbpaf.biocuckoo.org/), and "evolution.java" will use p-sites of 6 eukarytes to calculate Residue Conservation Score (RCS) of p-sites identified in this work.
-"test_all.txt" contains number of kinase families of each p-site, and "UpKA.java" will be used to extract the infromation of kinase families.
-"domain_domain.dat" and "domain_motif.dat" were downloaded from 3DID database (https://3did.irbbarcelona.org/), which contain the known domain-domain and domain-motif interactions, and "PPIdomain.java" will be used to extract the information of protein-protein interactions (PPI) domain.
-"seq_all.sulfation_new.fa" includes acetylation sites of proteins predicted by GPS-PAIL 2.0 (http://pail.biocuckoo.org/), and "CrossTalk.java" will be used to extract the information of crosstalk. 
-"result_all.txt" contains the second structural infromation of proteins by NetSurfP v1.1 (http://www.cbs.dtu.dk/services/NetSurfP/), and "SecondStructure.java" will be used to extract the information of relative surface accessibility (RSA) and secondary structure.
+For users who want to run iFPS in own computer, files contian the information of different features should be first generated as the form demonstrated in demo/.  
+"ELM_HUMAN.fa" contains human p-sites in ELM format collected in dbPAF (http://dbpaf.biocuckoo.org/), and "evolution.java" will use p-sites of 6 eukarytes to calculate Residue Conservation Score (RCS) of p-sites identified in this work.  
+"test_all.txt" contains number of kinase families of each p-site, and "UpKA.java" will be used to extract the infromation of kinase families.  
+"domain_domain.dat" and "domain_motif.dat" were downloaded from 3DID database (https://3did.irbbarcelona.org/), which contain the known domain-domain and domain-motif interactions, and "PPIdomain.java" will be used to extract the information of protein-protein interactions (PPI) domain.  
+"seq_all.sulfation_new.fa" includes acetylation sites of proteins predicted by GPS-PAIL 2.0 (http://pail.biocuckoo.org/), and "CrossTalk.java" will be used to extract the information of crosstalk.  
+"result_all.txt" contains the second structural infromation of proteins by NetSurfP v1.1 (http://www.cbs.dtu.dk/services/NetSurfP/), and "SecondStructure.java" will be used to extract the information of relative surface accessibility (RSA) and secondary structure.  
 At last, once you have all above files ready, you can open the command prompt in your computer with JAVA 1.8.0 installed, and open the directory in which you have saved java codes. After run the command "javac main.java" to compile the java program, "training_out_example.txt" and "training_dataset.txt" will be generated which contains the outputs of 10 times of training and training dataset for the best training AUC.
 
 ## Additional information
