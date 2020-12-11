@@ -331,7 +331,7 @@ public class main {
 			bw0.close();
 			
 			BufferedWriter bw1 = new BufferedWriter(new FileWriter
-					("results.txt"));
+					("traning_dataset.txt"));
 			writerROC(bw1,poss,negsforpre,sscore);
 		}
 	}
