@@ -40,4 +40,15 @@ For users who want to run iFPS in own computer, files contian the information of
 "domain_domain.dat" and "domain_motif.dat" were downloaded from 3DID database (https://3did.irbbarcelona.org/), which contain the known domain-domain and domain-motif interactions, and "PPIdomain.java" will be used to extract the information of protein-protein interactions (PPI) domain.  
 "seq_all.sulfation_new.fa" includes acetylation sites of proteins predicted by GPS-PAIL 2.0 (http://pail.biocuckoo.org/), and "CrossTalk.java" will be used to extract the information of crosstalk.  
 "result_all.txt" contains the second structural infromation of proteins by NetSurfP v1.1 (http://www.cbs.dtu.dk/services/NetSurfP/), and "SecondStructure.java" will be used to extract the information of relative surface accessibility (RSA) and secondary structure.  
-At last, once you have all above files ready, you can open the command prompt in your computer with JAVA 1.8.0 installed, and open the directory
+At last, once you have all above files ready, you can open the command prompt in your computer with JAVA 1.8.0 installed, and open the directory in which you have saved java codes. After run the command "javac main.java" to compile the java program, "training_out_example.txt" and "training_dataset.txt" will be generated which contains the outputs of 10 times of training and training dataset for the best model.  
+### pLiRK
+For users who want to run pLiRK in own computer, the ELM and ELM.igps files should be first generated. ELM files contain the information of identified phosphosites and hyper- or hypo-phosphorylated sites, while ELM.igps files contains the prediction results of iGPS. Once you have above files ready, you can open the command prompt in your computer with Python 3.7.9 installed, and open the directory in which you have saved java codes. After run the command "Python pLiRK.py" to compile the python program, "enrichment_output.txt" will be generated which contains the outputs of potential lifespan-related kinases.
+
+## Additional information
+Expected run time is depended on the number of phosphosites used for prediction, it will take about 5 minutes for 2,000 sites.
+## Contact
+Dr. Yu Xue: xueyu@hust.edu.cn  
+Dr. Mengqiu Dong: dongmengqiu@nibs.ac.cn  
+Wenjun Li: liwenjun@nibs.ac.cn  
+Chenwei Wang: wangchenwei@hust.edu.cn  
+
